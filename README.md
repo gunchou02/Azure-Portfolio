@@ -51,8 +51,8 @@ GitHub と Azure Deployment Center を連携
 📝 Future Roadmap
 今後のアップデート予定（学習ロードマップ）：
 
-- [x] **Azure Database for MySQL** との連携 (3-Tier 構成化) ✅ Complete!
-- [x] **Environment Variables** を使用したセキュアな接続情報の管理 ✅ Complete!
+- [x] **Azure Database for MySQL** との連携 (3-Tier 構成化)
+- [x] **Environment Variables** を使用したセキュアな接続情報の管理
 - [ ] **Application Insights** によるサーバー監視とログ分析 (Monitoring)
 - [ ] **Terraform** を活用したインフラ構築のコード化 (IaC)
 - [ ] カスタムドメインと SSL 証明書の適用

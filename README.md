@@ -5,16 +5,16 @@ Web サーバーの構築から、GitHub と連携した継続的なデプロイ
 
 ## 🔗 Demo
 
-**Live URL:** [parkjeongbin-portfolio-cpewexg2bagqd6dk.japaneast-01.azurewebsites.net]
+**Live URL:** [https://parkjeongbin-portfolio-cpewexg2bagqd6dk.japaneast-01.azurewebsites.net](https://parkjeongbin-portfolio-cpewexg2bagqd6dk.japaneast-01.azurewebsites.net)
 
 ## 🛠 Architecture
 
 本プロジェクトのインフラ構成図です。
 
+```mermaid
 graph LR
-User((User)) -- HTTPS --> Azure[Azure App Service\n(Linux/PHP 8.4)]
-GitHub[GitHub Repository] -- Push/Auto Deploy --> Azure
-Point: ローカル環境ではなく、Azure のマネージドサービス(PaaS)を利用することで、OS 管理の手間を省き、アプリケーション開発に集中できる環境を構築しました。
+    User((User)) -- HTTPS --> Azure["Azure App Service<br>(Linux/PHP 8.4)"]
+    GitHub[GitHub Repository] -- Push/Auto Deploy --> Azure
 
 💻 Tech Stack
 Cloud: Microsoft Azure (App Service)
@@ -48,17 +48,21 @@ GitHub と Azure Deployment Center を連携
 
 本番環境での動作確認
 
+📊 Monitoring Verification
+Azure Portal のダッシュボード遅延のため、クライアントサイドのネットワークログにてステータス 200 (送信成功) を確認し、監視機能の動作を検証しました。
+
+(※ 画像ファイル名を保存したものに合わせてください)
+
 📝 Future Roadmap
 今後のアップデート予定（学習ロードマップ）：
 
-- [x] **Azure Database for MySQL** との連携 (3-Tier 構成化)
-- [x] **Environment Variables** を使用したセキュアな接続情報の管理
-- [x] **Application Insights** によるサーバー監視とログ分析 (Monitoring)
-- [ ] **Terraform** を活用したインフラ構築のコード化 (IaC)
-- [ ] カスタムドメインと SSL 証明書の適用
+_[x] Azure Database for MySQL との連携 (3-Tier 構成化) ✅ Complete!
 
-Created by [PARK JEONGBIN]. Student at HAL Tokyo.
+_[x] Environment Variables を使用したセキュアな接続情報の管理 ✅ Complete!
 
-```
+_[x] Application Insights によるサーバー監視とログ分析 (Monitoring) ✅ Complete!
 
+_[ ] Terraform を活用したインフラ構築のコード化 (IaC)
+
+_[ ] カスタムドメインと SSL 証明書の適用
 ```

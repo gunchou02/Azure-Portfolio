@@ -53,7 +53,7 @@ GitHub と Azure Deployment Center を連携
 
 - [x] **Azure Database for MySQL** との連携 (3-Tier 構成化)
 - [x] **Environment Variables** を使用したセキュアな接続情報の管理
-- [ ] **Application Insights** によるサーバー監視とログ分析 (Monitoring)
+- [x] **Application Insights** によるサーバー監視とログ分析 (Monitoring)
 - [ ] **Terraform** を活用したインフラ構築のコード化 (IaC)
 - [ ] カスタムドメインと SSL 証明書の適用
 

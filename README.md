@@ -5,16 +5,17 @@ Web サーバーの構築から、GitHub と連携した継続的なデプロイ
 
 ## 🔗 Demo
 
-**Live URL:** [https://parkjeongbin-portfolio-cpewexg2bagqd6dk.japaneast-01.azurewebsites.net](https://parkjeongbin-portfolio-cpewexg2bagqd6dk.japaneast-01.azurewebsites.net)
+**Live URL:** [parkjeongbin-portfolio-cpewexg2bagqd6dk.japaneast-01.azurewebsites.net]
 
 ## 🛠 Architecture
 
 本プロジェクトのインフラ構成図です。
 
-```mermaid
 graph LR
-    User((User)) -- HTTPS --> Azure["Azure App Service<br>(Linux/PHP 8.4)"]
-    GitHub[GitHub Repository] -- Push/Auto Deploy --> Azure
+User((User)) -- HTTPS --> Azure[Azure App Service\n(Linux/PHP 8.4)]
+GitHub[GitHub Repository] -- Push/Auto Deploy --> Azure
+Point: ローカル環境ではなく、Azure のマネージドサービス(PaaS)を利用することで、OS 管理の手間を省き、アプリケーション開発に集中できる環境を構築しました。
+
 💻 Tech Stack
 Cloud: Microsoft Azure (App Service)
 
@@ -57,8 +58,6 @@ GitHub と Azure Deployment Center を連携
 - [ ] カスタムドメインと SSL 証明書の適用
 
 Created by [PARK JEONGBIN]. Student at HAL Tokyo.
-
-```
 
 ```
 
